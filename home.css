@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*NAVIGATION BAR*/
+.navigationBar{
+    height: 69px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+.medLinks{
+    width: 70%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding-right: 550px;
+}
+.medLinks a{
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4b4b4b;
+    position: relative;
+}
+.medLinks a:hover{
+    color: #84AD7C;
+}
+.medLinks a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 63, 0);
+    transition: all 0.2s linear;
+
+}
+.medLinks a:hover::before{
+    width: 100%;
+}
+
+/* NAVIGATION BUTTONS */
+.navButtons{
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+.navButtons a{
+    float: right;
+}
+.startBtn{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin:  0px 5px;
+    padding: 7px 15px;
+    background-color: #84AD7C;
+    color: #e2e2e2;
+    border-radius: 20px;
+    width: 100%;
+}
+
+/*COVERPAGE-LANDING PAGE*/
+.landingPage{
+    display: flex;
+    min-height: 100vh;
+}
+.coverTitle{
+    flex: 2;
+    text-align: center;
+    margin: auto;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+.mainTitle{
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    animation: animate 2s 1;
+    color: #252525;
+    background-color: white;
+    text-align: left;
+}
+.mainDesc{
+    color: #343634cb;
+    font-size: 22px;
+    text-align: left;
+}
+.coverImage{
+    flex: 1;
+    padding-top: 130px;
+    padding-right: 90px;
+    align-items: center;
+}
+.coverBtns{
+    margin-top: 25px;
+    width: 100%;
+    text-align: left;
+}
+.coverBtns button{
+    width: 200px;
+    padding: 10px;
+    margin: 6px 0;
+    box-shadow: 0px 2px 7px #3535358e;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    background-color: #84AD7C;
+    color: rgb(235, 235, 235);
+    border: none;
+    outline: none;
+}
+
+/*ARROW UP*/
+.scroll-up{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 20px;
+    opacity: 0;
+}
+.scroll-up a{
+    float: right;
+    padding: 5px 8px;
+    background: #84AD7C;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.scroll-up.active{
+    opacity: 1;
+}
+
+/* HIDDEN LOG OUT BUTTON */
+.signoutbtn button{
+    display: flex;
+    font-size: 16px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+.signoutbtn{
+    text-decoration: none;
+}
+.signoutbtn img{
+    margin-left: 10px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}

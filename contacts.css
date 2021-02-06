@@ -1,0 +1,79 @@
+.contactPage{
+    min-height: 100vh;
+    transition: 0.9s;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+.contactPage[data-scroll="in"]{
+    transform: scaleX(1);
+}
+.contactForm{
+    margin: auto;
+    padding: 0 60px;
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    padding-top: 100px;
+}
+.contactForm h1{
+    font-size: 3vw;
+    /* background:linear-gradient(to bottom, #617E61, #7DAA7D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #252525;
+    text-shadow: 0px 3px 5px grey;
+    font-weight:lighter;
+    text-align: left;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*FORM*/
+.contactName, .contactEmail, .contactMessage{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #7e7e7ec5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #002b00;
+}
+.contactName::placeholder, .contactEmail::placeholder, .contactMessage::placeholder{
+    color: #4b4b4b75;
+}
+.contBtn{
+    text-align: center;
+    padding: 10px 0;
+}
+.contactForm button{
+    padding: 10px;
+    width: 35%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #84AD7C;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.contIcons{
+    text-align: center;
+    color: #7a7979;
+    cursor: pointer;
+}
+.contIcons i{
+    padding: 0 5px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color:  #3E3E3E;
+    text-align: center;
+    padding: 10px 0;
+}
+footer p{
+    color: #aaaaaa;
+    font-size: 16px;
+}

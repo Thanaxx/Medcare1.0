@@ -1,0 +1,318 @@
+@media (max-width: 1175px){
+    .medLinks{
+        padding-right: 300px;
+    }
+    .requestPage{
+        flex-direction: column;
+    }
+    .requestPage > div{
+        width: 100%;
+    }
+    .aboutImage{
+        display: none;
+    }
+}
+
+
+    
+@media (min-width: 769px) and (max-width: 1000px){
+
+    .medLinks{
+        padding-right: 100px;   
+    }
+    /*NAVIGATION BAR*/
+    .medLinks{
+        width: 70%;
+        padding-right: 100px;
+    }
+    .medLinks a{
+        font-size: 17px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: #064F04;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*LANDING PAGE*/
+    .landingPage{
+        flex-direction: column;
+        margin-top: 100px;
+        min-height: 100vh;
+        padding: 0 40px;
+    }
+    .coverImage{
+        padding: 17px;
+    }
+    .coverImage img{
+        width: 100%;
+    }
+    .coverBtns button{
+        width: 50%;
+    }
+    .mainTitle{
+        font-size: 60px;
+    }
+    /*SERVICES*/
+    .sampleServices{
+        padding: 0px;
+    }
+    .sampleServices li{
+        font-size: 15px;
+    }
+    .servicesPage{
+        min-height: 70vh;
+        width: 100%;
+    }
+
+    /*ABOUT PAGE*/
+    .aboutImage{
+        display: none;
+    }
+    .aboutDescription p{
+        font-size: 20px;
+    }
+    .aboutPage{
+        padding: 0px 100px 0px 100px;
+    }
+
+
+    /*PROCESS REQUEST*/
+    .requestProcessPage{
+        padding: 0px 200px; 
+    }   
+    .requestTitle{
+        font-size: 24px;    
+        padding-top: 30px;
+    }
+    .requestPage > div{
+        width: 85%;
+        margin: 20px 0;
+    }
+    
+}
+
+
+@media (max-width: 768px){
+    /*NNAVIGATION BAR*/
+    .medLinks, .navButtons{
+        display: none;
+    }
+    .navigationBar{
+        height: 55px;
+    }
+    .menubar{
+        display: block;
+        width: 100%;
+        padding: 10px 12px;
+    }
+    .navlinks{
+        display: none;
+    }
+
+    /*LANDING PAGE*/
+    .landingPage{
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .coverImage{
+        padding-top: 5px;
+        flex: 2;
+        padding: 0 50px;
+    }
+    .coverTitle{
+        flex: 1;
+        text-align: center;
+        margin: auto;
+        flex: 1;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .coverBtns button{
+        width: 50%;
+    }
+    .mainTitle{
+        font-size: 39px;
+    }
+    .mainDesc{
+        color: #2c552abd;
+        font-size: 16px;
+    }
+
+    /*ABOUT PAGE*/
+    .aboutTitle{
+        font-size: 30px;
+        padding: 20px;
+    }
+    .aboutDescription p{
+        font-size: 17px;
+    }
+    .aboutPage{
+        padding: 30px 40px 0px 40px;
+    }
+    .aboutImage{
+        display: none;
+    }
+
+
+    /*SERVICES*/
+    .servicesPage{
+        min-height: 100vh;
+        width: 100%;
+        padding: 50px 0px 50px 0px;
+    }
+    .sampleServices{
+        min-height: 100vh;
+        padding: 0px;
+        flex-direction: column;
+
+    }
+    .sampleServices li{
+        font-size: 15px;
+    }
+    .sampleServices img{
+        width: 50%;
+        height: 200px;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+    .servicesPage h1{
+        font-size: 30px;
+    }
+    .serviceA, .serviceB, .serviceC {
+        margin: 10px 20px;
+    }
+    
+    /*PROCESS REQUEST*/
+    .requestProcessPage{
+        padding: 0px 100px; 
+    }   
+    .requestTitle{
+        font-size: 24px;    
+        padding-top: 30px;
+    }
+    .requestPage > div{
+        width: 85%;
+        margin: 20px 0;
+    }
+
+    /*CONTACTS PAGE*/
+    .contactPage{
+        padding: 100px 50px 0px 50px;
+    }
+    .contactDetails{
+        display: none;
+    }
+    .contactForm h1{
+        font-size: 30px;
+        padding: 20px; 
+        text-align: center;
+    }
+    .contactForm button{
+        width: 50%;
+    }
+    .contactForm{
+        padding: 0px;
+        width: 100%;
+    }
+    .contactName, .contactEmail, .contactMessage{
+        padding: 12px 0;
+        color: #2c2c2c;
+    }
+
+
+    /* PRODUCTS */
+    .secondheader{
+        padding: 0px 20px;
+    }
+    .product-container{
+        padding: 80px 40px;
+    }
+    .product > div{
+        margin: 25px 15px;
+        min-height: 260px;
+    }
+    .product p{
+        padding-bottom: 6px;
+        font-size: 14px;
+    }
+    .product h2{
+        font-size: 16px;
+    }
+    .select p{
+        position: absolute;
+        left: 30%;
+        top: 25%;
+        font-size: 12px;
+    }
+    .select p{
+        position: absolute;
+        left: 30%;
+        top: 10%;
+    }
+
+
+    /* Menu bar */
+    .menubar a{
+        float: left;
+        color: #84AD7C;
+        cursor: pointer;
+        position: fixed;
+    }
+
+    /*sidebar*/
+    .sidebar-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #00000070;
+    }
+    .sidebar{
+        background-color: #84AD7C;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        z-index: 2;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .sidebar a{
+        text-decoration: none;
+        color: #e7e7e7;
+        font-size: 30px;
+        display: block;
+        padding: 5px 0;
+        margin: 65px 25px 10px 120px;
+        position: relative;
+    }
+    .sidebar h1{
+        float: right;
+        padding: 10px 20px;
+        font-size: 45px;
+        color: #e7e7e7;
+        cursor: pointer;
+    }
+    .sidebar a:hover{
+        font-weight: bold;
+        color: #2e333ad7;
+    }
+    .sidebar h1:hover{
+        font-weight: bold;
+        color: #2e333ad7;
+        font-size: 50px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 1000px){
+    .sidebar-container{
+        display: none;
+    }
+}

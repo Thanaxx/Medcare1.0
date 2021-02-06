@@ -1,0 +1,51 @@
+.servicesPage{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0px;
+}
+.sampleServices{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 160px;
+}
+.sampleServices img{
+    width: 70%;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.servicesPage h1{
+    font-size: 3vw;
+    color: #252525;
+    text-shadow: 0px 3px 5px grey;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    transition: 0.9s;
+    transform-origin: top;
+    transform: scaleX(0);
+}
+.servicesPage h1[data-scroll="in"]{
+    transform: scaleX(1);
+}
+.sampleServices > div{
+    transition: 0.9s;
+    transform-origin: center;
+    transform: scaleX(0);
+    flex: 1;
+    margin:0 20px;
+}
+.sampleServices > div[data-scroll="in"]{
+    transform: scaleX(1);
+}
+.sampleServices li{
+    list-style-type: none;
+}
+.sampleServices li{
+    font-weight: lighter;
+    background: linear-gradient(to left, #475A47, #3F3D56);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

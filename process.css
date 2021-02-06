@@ -1,0 +1,57 @@
+.requestProcessPage{
+    min-height: 100vh;
+    padding: 0px 200px;
+}
+.requestTitle{
+    font-size: 3vw;
+    color: #252525;
+    text-shadow: 0px 3px 5px grey;
+    font-weight: lighter;
+    text-align: center;
+    transition: 0.4s;
+    transform-origin: center;
+    transform: scaleX(0);
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.requestTitle[data-scroll="in"]{
+    transform: scaleX(1);
+}
+.requestPage{
+    display: inline-block;
+    width: 100%;
+    display: flex;
+}
+.requestPage > div{
+    transition: 0.9s;
+    transform-origin: top;
+    transform: scaleX(0);
+    width: 40%;
+    margin: 20px;
+}
+.requestPage > div[data-scroll="in"]{
+    transform: scaleX(1);
+}
+.reqA, .reqB, .reqC, .reqD{
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #84ad7c42;
+    padding: 20px 25px;
+    box-shadow: 0 2px 5px #747474a6;
+}
+
+.requestPage h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background:linear-gradient(to bottom, #617E61, #7DAA7D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.requestPage p{
+    text-align: justify;
+    font-weight: lighter;
+    color: #28332886;
+    font-size: 15px;
+}

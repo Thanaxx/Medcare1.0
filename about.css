@@ -1,0 +1,52 @@
+/*ABOUT PAGE*/
+.aboutPage{
+    padding: 0px 200px 0px 200px;
+    min-height: 100vh;
+}
+.aboutTitle{
+    font-size: 3vw;
+    /* color: white;
+    background:linear-gradient(to bottom, #617E61, #7DAA7D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 80px;
+    transition: 0.7s;
+    transform-origin: center;
+    transform: scaleX(0);
+    color: #252525;
+    text-shadow: 0px 3px 5px grey;
+}
+.aboutTitle[data-scroll="in"]{
+    transform: scaleX(1);
+}
+.aboutContainer{
+    display: flex;
+    transition: 0.9s;
+    transform-origin: center;
+    transform: scaleX(0);
+    margin: auto;
+    padding-top: 50px;
+}
+.aboutContainer[data-scroll="in"]{
+    transform: scaleX(1);
+}
+.aboutDescription{
+    flex: 2;
+}
+.aboutDescription p{
+    font-size: 18px;
+    text-align: justify;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to left, #425042, #535168);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.aboutImage{
+    flex: 1;
+}
+.aboutImage img{
+    width: 100%;
+}

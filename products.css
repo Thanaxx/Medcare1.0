@@ -1,0 +1,226 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* navigation*/
+.secondheader{
+    position: fixed;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0px 170px;
+    background-color: white;
+    border-bottom: 1px solid #49494900;
+    box-shadow: 0px 3px 4px rgba(73, 73, 73, 0.24);
+}
+.productTitle{
+    padding-right: 20px;
+    font-size: 23px;
+    color: #7DAA7D;
+}
+
+.secondheader > div{
+    flex: 1;
+}
+
+.navbtn h1{
+    float: right;
+}
+
+/* .product > div{
+    transition: 0.9s;
+    transform-origin: center;
+    transform: scaleX(0);
+} */
+/* .product > div[data-scroll="in"]{
+    transform: scaleX(1);
+} */
+/*SEARCH ANIMATE STYLE*/
+/* .searchBox{
+    border-radius: 25px;
+    padding: 3px 10px;
+    position: absolute;
+    top: 15px;
+    right: 170px;
+}
+.searchIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color:#ffffff;
+    color: #7DAA7D;
+    float: right;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.search{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    line-height: 24px;
+    transition: 0.4s;
+    width: 0px;
+    float: left;
+}
+.searchBox:hover{
+    border: 1px solid #5e5e5e4f;
+    box-shadow: 0px 3px 5px #77777791;
+}
+.searchBox:hover > input{
+    width: 240px;
+} */
+
+
+
+.checkCart{
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    color:#358835;
+    font-size: 33px;
+    position: relative;
+}
+.checkCart::before{
+    content: attr(data-count);
+    position: absolute;
+    color: rgb(78, 74, 74);
+    font-size: 18px;
+    right: 0px;
+    text-align: center;
+    top: -7px;
+    width: 22px;
+    height: 22px;
+    background-color: #eeff51;
+    border-radius: 50%;
+    opacity: 0;   
+}
+.checkCart.zero::before{
+    opacity: 1;
+}
+
+
+/* PRODUCTS DESIGN */
+.product-container{
+    padding: 80px 150px;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product > div{
+    border: 1px solid #7daa7d2d;
+    flex: 1;
+    margin: 25px 15px;
+    min-height: 320px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px #49494941;
+    padding: 8px 8px 15px 8px;
+}
+.product p{
+    color: #747474;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 7px;
+    font-size: 15px;
+}
+.product a{
+    text-decoration: none;
+    color:#7DAA7D;
+}
+.product h4{
+    font-family: Roboto;
+    color: #245a24;
+    font-size: 16px;
+    padding-top: 5px;
+}
+.product h2{
+    font-family: Roboto;
+    color: #245a2493;
+}
+.product button{
+    padding: 6px 10px;
+    background-color: #7DAA7D;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* ADD TO CART STYLES*/
+.select{
+    width: 95%;
+    height: 570px;
+    background-color: #7c7a7a;
+    position: absolute;
+    top: -1000px;
+    left: 3%;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+    box-shadow: 0px 3px 5px grey;
+    position: fixed;
+    padding: 30px 50px;
+}
+.select.display{
+    top: 63px;
+}
+.select div{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    padding: 8px;
+    position: relative;
+    margin: 30px auto;
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255);
+}
+.select div img{
+    width: 100px;
+    height: 100%;
+}
+.select div button{
+    left: 80%;
+    top: 70%;
+    position: absolute;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.select a{
+    display: none;
+}
+.select h4{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+.select h2{
+    position: absolute;
+    left: 30%;
+    top: 70%;
+}
+.select p{
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+
+@media (max-width: 768px){
+    .select p{
+        position: absolute;
+        left: 30%;
+        top: 25%;
+        padding-top: 20px;
+    }
+}
